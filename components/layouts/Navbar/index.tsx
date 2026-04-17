@@ -11,7 +11,7 @@ import styles from './Navbar.module.scss'
 
 const navLinks = [
   { label: 'Product', href: '/product' },
-  { label: 'Scrapping', href: '/scrapping' },
+  { label: 'Scraping', href: '/scraping' },
 ]
 
 export default function Navbar() {
