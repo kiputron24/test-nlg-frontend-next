@@ -31,10 +31,10 @@ export async function getProducts(page = 1, limit = 10): Promise<ProductsPage> {
     },
   )
   return {
-    products: data.data.data.map(mapProduct),
-    total: data.data.total,
-    totalPages: data.data.totalPages,
-    page: data.data.page,
+    products: data.data.items.map(mapProduct),
+    total: data.data.pagination.total,
+    totalPages: data.data.pagination.totalPages,
+    page: data.data.pagination.page,
   }
 }
 

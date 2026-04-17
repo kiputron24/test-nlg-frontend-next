@@ -29,11 +29,13 @@ export interface ApiMeta {
 }
 
 export interface ApiPaginatedData<T> {
-  data: T[]
-  total: number
-  page: number
-  limit: number
-  totalPages: number
+  items: T[]
+  pagination: {
+    total: number
+    page: number
+    limit: number
+    totalPages: number
+  }
 }
 
 export interface ApiResponse<T> {
