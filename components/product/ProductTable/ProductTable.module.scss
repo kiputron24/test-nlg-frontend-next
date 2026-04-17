@@ -1,0 +1,49 @@
+@reference "../../../app/globals.css";
+
+.name {
+  @apply font-medium text-gray-900;
+}
+
+.description {
+  @apply text-gray-500 max-w-xs truncate;
+}
+
+/* Stock badges */
+.badge {
+  @apply inline-flex items-center justify-center text-xs font-semibold px-2.5 py-1 rounded-full min-w-8;
+}
+
+.badgeOk {
+  @apply bg-green-100 text-green-700;
+}
+
+.badgeLow {
+  @apply bg-yellow-100 text-yellow-700;
+}
+
+.badgeEmpty {
+  @apply bg-red-100 text-red-600;
+}
+
+/* Action buttons */
+.actions {
+  @apply flex items-center gap-2;
+}
+
+.editBtn {
+  @apply text-xs font-semibold text-brand bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-lg cursor-pointer;
+  transition: background-color 150ms ease;
+}
+
+.editBtn:hover {
+  @apply bg-blue-100;
+}
+
+.deleteBtn {
+  @apply text-xs font-semibold text-red-600 bg-red-50 border border-red-200 px-3 py-1.5 rounded-lg cursor-pointer;
+  transition: background-color 150ms ease;
+}
+
+.deleteBtn:hover {
+  @apply bg-red-100;
+}

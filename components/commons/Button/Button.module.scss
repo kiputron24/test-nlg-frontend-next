@@ -1,0 +1,59 @@
+@reference "../../../app/globals.css";
+
+.btn {
+  @apply inline-flex items-center justify-center font-semibold cursor-pointer border border-transparent no-underline whitespace-nowrap;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.btn:disabled {
+  @apply cursor-not-allowed opacity-60;
+  transform: none;
+}
+
+/* Sizes */
+.sm {
+  @apply text-sm min-h-9 py-2 px-4 rounded-md;
+}
+
+.md {
+  @apply text-sm min-h-11 py-2.5 px-5 rounded-lg;
+}
+
+.lg {
+  @apply text-base min-h-13 py-3.5 px-6 rounded-lg;
+}
+
+/* Variants */
+.primary {
+  @apply bg-brand text-white;
+}
+
+.primary:hover {
+  @apply bg-brand/90;
+}
+
+.secondary {
+  @apply bg-white border-gray-300 text-gray-700;
+}
+
+.secondary:hover {
+  @apply bg-gray-50;
+}
+
+.ghost {
+  @apply bg-transparent text-blue-600;
+}
+
+.ghost:hover {
+  @apply bg-blue-50;
+}
+
+/* Full width */
+.fullWidth {
+  @apply w-full;
+}

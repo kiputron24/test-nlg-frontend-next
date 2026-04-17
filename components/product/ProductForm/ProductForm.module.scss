@@ -1,0 +1,70 @@
+@reference "../../../app/globals.css";
+
+.form {
+  @apply flex flex-col gap-5;
+}
+
+.row {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.field {
+  @apply flex flex-col gap-1.5;
+}
+
+.label {
+  @apply text-sm font-semibold text-gray-700;
+}
+
+.optional {
+  @apply font-normal text-gray-400;
+}
+
+.input {
+  @apply w-full h-11 px-4 text-sm text-gray-900 bg-white border border-gray-300 rounded-lg outline-none;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.input:focus {
+  @apply border-brand;
+  box-shadow: 0 0 0 3px rgba(1, 32, 241, 0.1);
+}
+
+.input::placeholder {
+  @apply text-gray-400;
+}
+
+.inputError {
+  @apply border-red-400;
+}
+
+.inputError:focus {
+  @apply border-red-500;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.textarea {
+  @apply w-full px-4 py-3 text-sm text-gray-900 bg-white border border-gray-300 rounded-lg outline-none resize-none;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.textarea:focus {
+  @apply border-brand;
+  box-shadow: 0 0 0 3px rgba(1, 32, 241, 0.1);
+}
+
+.textarea::placeholder {
+  @apply text-gray-400;
+}
+
+.error {
+  @apply text-xs text-red-500 mt-0.5 m-0;
+}
+
+.actions {
+  @apply flex items-center justify-end gap-3 pt-2;
+}

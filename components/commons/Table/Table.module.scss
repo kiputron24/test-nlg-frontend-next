@@ -1,0 +1,38 @@
+@reference "../../../app/globals.css";
+
+.wrapper {
+  @apply w-full overflow-x-auto rounded-xl;
+}
+
+.table {
+  @apply w-full border-collapse text-sm;
+}
+
+.thead {
+  @apply bg-gray-50;
+}
+
+.th {
+  @apply text-left text-gray-500 font-semibold text-xs uppercase tracking-wide px-4 py-3 border-b border-gray-200;
+}
+
+.row {
+  @apply border-b border-gray-100;
+  transition: background-color 150ms ease;
+}
+
+.row:last-child {
+  @apply border-b-0;
+}
+
+.row:hover {
+  @apply bg-gray-50/60;
+}
+
+.td {
+  @apply px-4 py-3 text-gray-700 align-middle;
+}
+
+.empty {
+  @apply flex items-center justify-center py-16 text-gray-400 text-sm;
+}

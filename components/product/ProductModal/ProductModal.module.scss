@@ -1,0 +1,46 @@
+@reference "../../../app/globals.css";
+
+.backdrop {
+  @apply fixed inset-0 z-50 flex items-center justify-center p-4;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  @apply w-full max-w-lg bg-white rounded-2xl shadow-2xl;
+  animation: slideUp 200ms ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.header {
+  @apply flex items-center justify-between px-6 py-5 border-b border-gray-100;
+}
+
+.title {
+  @apply text-base font-semibold text-gray-900 m-0;
+}
+
+.closeBtn {
+  @apply flex items-center justify-center w-8 h-8 rounded-lg text-gray-400 bg-transparent border-none cursor-pointer;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.closeBtn:hover {
+  @apply bg-gray-100 text-gray-600;
+}
+
+.body {
+  @apply px-6 py-6;
+}

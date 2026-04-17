@@ -1,0 +1,33 @@
+@reference "../../../app/globals.css";
+
+.pagination {
+  @apply flex items-center justify-center gap-1.5;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center min-w-9 h-9 px-3 text-sm font-medium text-gray-600 bg-white border border-gray-200 rounded-lg cursor-pointer;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease;
+}
+
+.btn:hover:not(:disabled) {
+  @apply bg-gray-50 border-gray-300;
+}
+
+.btn:disabled {
+  @apply opacity-40 cursor-not-allowed;
+}
+
+.active {
+  @apply bg-brand text-white border-brand;
+}
+
+.active:hover {
+  @apply bg-brand/90;
+}
+
+.ellipsis {
+  @apply inline-flex items-center justify-center min-w-9 h-9 text-sm text-gray-400;
+}

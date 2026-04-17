@@ -1,0 +1,66 @@
+@reference "../../../app/globals.css";
+
+.header {
+  @apply w-full bg-white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  @apply max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative;
+}
+
+.logo {
+  @apply shrink-0;
+
+  img {
+    @apply w-30 h-7.5;
+  }
+}
+
+/* Desktop nav links */
+.navList {
+  @apply hidden md:flex items-center gap-8 list-none m-0 p-0;
+  @apply absolute left-1/2 -translate-x-1/2;
+}
+
+.navLink {
+  @apply text-gray-700 text-sm font-medium no-underline;
+  transition: color 150ms ease;
+}
+
+.navLink:hover {
+  @apply text-blue-600;
+}
+
+/* Desktop CTA */
+.ctaWrapper {
+  @apply hidden md:block;
+}
+
+/* Hamburger button */
+.menuBtn {
+  @apply flex md:hidden items-center justify-center w-10 h-10 rounded-lg text-gray-700 bg-transparent border-none cursor-pointer;
+  transition: background-color 150ms ease;
+}
+
+.menuBtn:hover {
+  @apply bg-gray-100;
+}
+
+/* Mobile drawer */
+.mobileMenu {
+  @apply flex flex-col md:hidden border-t border-gray-100 px-6 py-4 gap-1;
+}
+
+.mobileNavLink {
+  @apply text-gray-700 text-base font-medium no-underline py-3 border-b border-gray-100 block;
+  transition: color 150ms ease;
+}
+
+.mobileNavLink:hover {
+  @apply text-blue-600;
+}
+
+.mobileCta {
+  @apply mt-4;
+}
