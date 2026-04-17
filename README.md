@@ -16,7 +16,19 @@ A Next.js frontend application for managing products, built with React 19, TypeS
 ## Requirements
 
 - Node.js 18 or later
-- A running backend API at `http://localhost:3010/api`
+- A running backend API (configured via environment variables)
+
+## Environment Variables
+
+Copy `.env.example` to `.env.local` and fill in the values:
+
+```bash
+cp .env.example .env.local
+```
+
+| Variable                   | Description                 | Example                     |
+| -------------------------- | --------------------------- | --------------------------- |
+| `NEXT_PUBLIC_API_BASE_URL` | Base URL of the backend API | `http://localhost:3010/api` |
 
 ## Getting Started
 
